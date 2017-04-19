@@ -1,0 +1,136 @@
+body{
+	font-family: Arial;
+}
+
+
+h1{
+	 font-size: 60px ;
+	text-align: center;
+	color: rgba(30, 80, 192, 0.9);
+}
+.bold{
+	font-weight: bold;
+	color: rgba(46, 92, 255, 0.9);
+	text-decoration: underline;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing:  50px;
+}
+
+/*estilo general*/
+nav{
+	margin-left: 230px;
+}
+nav ul{
+    
+	list-style: none;
+	padding: 0em;
+}
+nav li{
+	line-height: 3rem;
+	position: relative;
+}
+nav li ul{
+	position: absolute;
+}
+nav a {
+	color: #ddd;
+	display: block;
+	padding: 0 2.5em;
+	text-decoration: none;
+	transition: .4s;
+
+}
+
+nav a:hover {	
+       background: rgba(0,0,0,.5);
+}
+
+nav ul ul {
+	display: none;
+
+}
+nav li:hover ul{
+	display: block;
+}
+/*primer nivel*/
+nav> ul {
+	background: #333;
+	display: table;
+
+	
+}
+
+nav> ul> li {
+   float: left;
+}
+/*2do nivel*/
+nav li li{
+	background: #222;
+	max-height: 1;
+	overflow: hidden;
+	transition: all.6s;
+	widows: 200px;
+}
+nav > ul >li > ul{
+	top: 100%;
+}
+label{
+font-weight: bold;
+}
+#saveForm {
+  position: relative;
+  top: 423px;
+  left: 1010px;
+ width:80px;
+        height:19px;
+}
+.contenedor {
+    width: 1080px;
+    margin: auto;
+    background: black;
+    color: bisque;
+    padding: 20px 15px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.contenedor .titulo {
+    font-size: 3.5ex;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#pestanas {
+    float: top;
+    font-size: 3ex;
+    font-weight: bold;
+    transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    position: relative;
+    top: 137px;
+    left: -566px;
+}
+#pestanas ul {
+    margin-left: -40px;
+}
+#pestanas li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    margin: 0px 2px -2px -0px;
+    background: darkgrey;
+    padding: 0px 20px 0px 20px;
+}
+#pestanas a:link {
+    text-decoration: none;
+    color: bisque;
+}
+#contenidopestanas {
+    clear: both;
+    background: dimgray;
+    padding: 20px;
+    width: 1025px;
+    height: 800px;
+}
